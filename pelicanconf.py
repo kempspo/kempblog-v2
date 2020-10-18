@@ -1,16 +1,24 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
+from datetime import datetime
 
-AUTHOR = 'Kemp Po'
-SITENAME = 'Kemp'
-SITEURL = ''
+AUTHOR = "Kemp Po"
+SITEURL = ""
+SITENAME = "Kemp Po"
+SITETITLE = "Kemp Po"
+SUBTITLE = "Kemp Po's Thoughts and Writings"
+SITELOGO = SITEURL + "/images/profile.png"
+# FAVICON = SITEURL + "/images/favicon.ico"
 
-PATH = 'content'
+PATH = "content"
 
-TIMEZONE = 'Asia/Manila'
+TIMEZONE = "Asia/Manila"
+DATE_FORMATS = {
+    "en": "%B %d, %Y",
+}
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = "en"
+
+STATIC_PATHS = ["images"]
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -20,16 +28,41 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (("github", "https://github.com/kempspo"),
+#          ("linkedin", "https://www.linkedin.com/in/kemp-po/"),
+#         #  ("Jinja2", "http://jinja.pocoo.org/"),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (("github", "https://github.com/kempspo"),
+          ("linkedin", "https://www.linkedin.com/in/kemp-po/"))
+
+BROWSER_COLOR = "#333"
+ROBOTS = "index, follow"
+
+PATH = "content"
+OUTPUT_PATH = "blog/"
+
+PLUGIN_PATHS = ["C:/Users/Kemp/Desktop/JupyterDump/pelican-plugins"]
+PLUGINS = ["i18n_subsites"]
+
+THEME = "C:/Users/Kemp/Desktop/JupyterDump/Flex"
+THEME_COLOR = "dark"
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+THEME_COLOR_ENABLE_USER_OVERRIDE = True
+
+PYGMENTS_STYLE = "emacs"
+PYGMENTS_STYLE_DARK = "monokai"
+
+COPYRIGHT_YEAR = datetime.now().year
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+USE_FOLDER_AS_CATEGORY = False
+
+MAIN_MENU = True
+MENUITEMS = (
+    ("Blog", "/category/blog.html"),
+    ("Notes", "/category/notes.html"),
+)
+
+USE_LESS = True
