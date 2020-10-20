@@ -1,4 +1,4 @@
-Title: My Journey into Data
+Title: My journey into data
 Date: 2020-07-07 00:00
 Category: Blog
 Tags: Personal Growth, Career Development
