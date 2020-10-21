@@ -41,12 +41,12 @@ h6 {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   background-color: @body-bg;
   color: @text-color;
   font-family: @sans;
-  font-size: 1.02em;
-  line-height: 1.2em;
+  font-size: 1.04em;
+  line-height: 1.4em;
 }
 
 a {
@@ -69,6 +69,23 @@ hr {
 
 img {
   max-width: 100%;
+}
+
+img[alt$= ">"] {
+  float: right;
+  padding-left: 10px;
+}
+
+img[alt$= "<"] {
+  float: left;
+  padding-right: 10px;
+}
+
+img[alt$= "><"] {
+  display: block;
+  height: auto;
+  margin: auto;
+  float: none!important;
 }
 
 aside {
