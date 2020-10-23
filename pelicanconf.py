@@ -8,8 +8,8 @@ SITESUBTITLE = "Thoughts of a data person"
 SITELOGO = SITEURL + "/images/profile.jpg"
 # FAVICON = SITEURL + "/images/favicon.ico"
 BROWSER_COLOR = "#333333"
-PYGMENTS_STYLE = "monokai"
-PYGMENTS_STYLE_DARK = "monokai"
+PYGMENTS_STYLE = "paraiso-light"
+PYGMENTS_STYLE_DARK = "paraiso-dark"
 
 ROBOTS = "index, follow"
 
