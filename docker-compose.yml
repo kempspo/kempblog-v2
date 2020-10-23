@@ -5,7 +5,7 @@ services:
     build:
       context: ./content
       dockerfile: Dockerfile
-    command: pelican content -s publishconf.py
+    # command: pelican content -s content/publishconf.py
     expose:
       - 8000
   nginx-proxy:
