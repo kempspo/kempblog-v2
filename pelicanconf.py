@@ -6,7 +6,7 @@ SITENAME = "Kemp Po"
 SITETITLE = "Kemp Po"
 SITESUBTITLE = "Thoughts of a data person"
 SITELOGO = SITEURL + "/images/profile.jpg"
-# FAVICON = SITEURL + "/images/favicon.ico"
+FAVICON = SITEURL + "/images/favicon.ico"
 BROWSER_COLOR = "#333333"
 PYGMENTS_STYLE = "paraiso-light"
 PYGMENTS_STYLE_DARK = "paraiso-dark"
@@ -38,9 +38,6 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-# LINKS = (("github", "https://github.com/kempspo"),
-#          ("linkedin", "https://www.linkedin.com/in/kemp-po/"),
-#         #  ("Jinja2", "http://jinja.pocoo.org/"),)
 
 # Social widget
 SOCIAL = (("github", "https://github.com/kempspo"),
