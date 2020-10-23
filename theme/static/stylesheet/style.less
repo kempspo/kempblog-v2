@@ -47,6 +47,7 @@ body {
   font-family: @sans;
   font-size: 1.04em;
   line-height: 1.4em;
+  letter-spacing: 0.02em;
 }
 
 a {
@@ -71,21 +72,20 @@ img {
   max-width: 100%;
 }
 
-img[alt$= ">"] {
+.img-right {
   float: right;
   padding-left: 10px;
 }
 
-img[alt$= "<"] {
+.img-left {
   float: left;
   padding-right: 10px;
 }
 
-img[alt$= "><"] {
-  display: block;
-  height: auto;
-  margin: auto;
-  float: none!important;
+.image-caption {
+  text-align: center;
+  font-size: .8rem;
+  color: @text-color;
 }
 
 aside {
