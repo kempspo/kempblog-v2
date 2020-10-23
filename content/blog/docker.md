@@ -2,7 +2,7 @@ Title: Containers and how to use them
 Date: 2020-10-20 00:00
 Category: Blog
 Tags: Docker, Best practices, Containers
-Slug: contiainers-and-how-to-them
+Slug: containers-and-how-to-them
 Authors: Kemp Po
 Summary: 
 
