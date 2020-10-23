@@ -22,4 +22,4 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = "kemppo-com"
-#GOOGLE_ANALYTICS = ""
+GOOGLE_ANALYTICS = os.getenv("GOOGLE_ANALYTICS")
