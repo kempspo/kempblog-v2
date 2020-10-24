@@ -43,7 +43,7 @@ AUTHOR_FEED_RSS = None
 SOCIAL = (("github", "https://github.com/kempspo"),
           ("linkedin", "https://www.linkedin.com/in/kemp-po/"))
 
-PLUGIN_PATHS = ["C:/Users/Kemp/Desktop/JupyterDump/pelican-plugins"]
+PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = ["i18n_subsites"]
 
 CC_LICENSE = {
