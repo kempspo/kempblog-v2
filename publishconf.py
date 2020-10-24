@@ -7,8 +7,15 @@ from __future__ import unicode_literals
 
 import os
 import sys
+from dotenv import load_dotenv, find_dotenv
+
 sys.path.append(os.curdir)
 from pelicanconf import *
+
+dotenv_path = find_dotenv()
+
+# load up the entries as environment variables
+load_dotenv(dotenv_path)
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'https://www.kemppo.com'
@@ -22,4 +29,4 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = "kemppo-com"
-GOOGLE_ANALYTICS = os.getenv("GOOGLE_ANALYTICS")
+GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS")
