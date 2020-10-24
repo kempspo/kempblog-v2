@@ -11,6 +11,6 @@ I am a data person and problem solver that enjoys developing data products where
 ### About this website
 At some point, I realized that I had thoughts and practices that I wanted to share to the world especially in the budding data community in the Philippines, where many people come from the non-Computer Science side of things. 
 
-This version of the website you are seeing today is the second iteration. Initially, the website was built on Django and deployed using Docker onto a DigitalOcean server. Eventually, making changes to the website became a chore and styling was a pain. This triggered a moved to [Pelican](https://github.com/getpelican/pelican), a static site generator built on Python using the [Flex theme](https://github.com/alexandrevicenzi/Flex).
+This version of the website you are seeing today is the second iteration. Initially, the website was built on Django and deployed using Docker onto a DigitalOcean server. Eventually, making changes to the website became a chore and styling was a pain. This triggered a moved to [Pelican](https://github.com/getpelican/pelican), a static site generator built on Python using a slightly modified version of the [Flex theme](https://github.com/alexandrevicenzi/Flex). The website is now deployed using Netlify.
 
 You can headover to the [repo](https://github.com/kempspo/kempblog-v2) to checkout how the site is built.
