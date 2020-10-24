@@ -4,7 +4,7 @@ Category: Blog
 Tags: Docker, Best practices, Containers
 Slug: containers-and-how-to-them
 Authors: Kemp Po
-Summary: 
+Summary: Introduction to Containerization and Docker. A brown bag I gave to the engineering team at First Circle
 
 Every developer has probably encountered this:
 > "It worked on my machine". 
