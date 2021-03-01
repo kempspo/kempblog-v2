@@ -2,15 +2,15 @@ Title: Containers and how to use them
 Date: 2020-10-20 00:00
 Category: Blog
 Tags: Docker, Best practices, Containers
-Slug: containers-and-how-to-them
+Slug: containers-and-how-to-use-them
 Authors: Kemp Po
 Summary: Introduction to Containerization and Docker. A brown bag I gave to the engineering team at First Circle
 
 Every developer has probably encountered this:
 > "It worked on my machine". 
 
-Fear not! We already have a the solution to this problem and they're called
-containers. No, not the enormous amount of plastic every asian mom keeps 
+Fear not! We already have a solution to this problem and they're called
+containers. No, not the enormous amount of plastic every Asian mom keeps 
 somewhere in the kitchen.
 
 ### What are containers?
@@ -28,9 +28,9 @@ the code. Without an image, there is no container.
 
 Now that we know what containers are,
 ### Why containers?
-We actually have different options of solving the problem, so lets weigh one of
+We actually have different options of solving the problem, so let's weigh one of
 the largest contenders to containers, the Virtual Machines or VMs. Virtual 
-Machines originally started off because servers processing power increased and
+Machines originally started because servers processing power increased and
 normal applications aren't able to maximize these resources. This, however,
 introduced a new issue, portability.
 
@@ -51,7 +51,7 @@ Containers, on the other hand, are just discrete processes. They share the host 
 
 ### How to get started with Docker?
 1. Install Docker.
-Docker works on Windows, MacOS, and Linux. 
+Docker works on Windows, macOS, and Linux. 
 2. Create a Dockerfile in the directory you're working on
 There are several parts to a Dockerfile.
 
@@ -69,10 +69,10 @@ There are several parts to a Dockerfile.
    
     ![](../images/docker/partsofdockerfile.png)
 
-    You can make a lot of customizations to your Dockerfile and how it's run. Checkout the documentation at [docs.docker.com](https://docs.docker.com/engine/reference/builder/)
+    You can make a lot of customizations to your Dockerfile and how it's run. Check out the documentation at [docs.docker.com](https://docs.docker.com/engine/reference/builder/)
 
 3. Build the image by running `docker build -f Dockerfile --cache-from <image_cache> --tag <image_name> .`.
-   Building the image is simple. All you need to do is run the `docker build` command. You can also pass different flags to it such as specifying which Dockerfile to use or what to tag the image with. Checkout all the possible options on their [documentation](https://docs.docker.com/engine/reference/commandline/build/)
+   Building the image is simple. All you need to do is run the `docker build` command. You can also pass different flags to it such as specifying which Dockerfile to use or what to tag the image with. Check out all the possible options on their [documentation](https://docs.docker.com/engine/reference/commandline/build/)
 
     A tip is to use the build-cache to making building new images much faster. This is the very reason why we put our code at the end of the Dockerfile. It is because Docker will use the build cache while it can until it detects a new change.
 
