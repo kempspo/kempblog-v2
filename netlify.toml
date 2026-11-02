@@ -1,0 +1,6 @@
+[build]
+publish = "output"
+command = "curl -LsSf https://astral.sh/uv/install.sh | sh && export PATH=\"$HOME/.local/bin:$PATH\" && uv sync --frozen --no-dev && uv run pelican content -o output -s publishconf.py"
+
+[build.environment]
+PYTHON_VERSION = "3.14"

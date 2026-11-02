@@ -1,72 +1,59 @@
 from datetime import datetime
 
 AUTHOR = "Kemp Po"
-SITEURL = ""
 SITENAME = "Kemp Po"
-SITETITLE = "Kemp Po"
-SITESUBTITLE = "Thoughts of a data person"
-SITELOGO = SITEURL + "/images/profile.jpg"
-FAVICON = SITEURL + "/images/favicon.ico"
-BROWSER_COLOR = "#333333"
-PYGMENTS_STYLE = "paraiso-light"
-PYGMENTS_STYLE_DARK = "paraiso-dark"
+SITEURL = ""
 
-ROBOTS = "index, follow"
-
-THEME = "theme/"
-THEME_COLOR = "dark"
-THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
-THEME_COLOR_ENABLE_USER_OVERRIDE = True
 PATH = "content"
-OUTPUT_PATH = "output/"
-
+OUTPUT_PATH = "output"
 TIMEZONE = "Asia/Manila"
+DEFAULT_LANG = "en"
 DATE_FORMATS = {
-    "en": "%B %d, %Y",
+    "en": "%B %-d, %Y",
 }
 
-COPYRIGHT_YEAR = datetime.now().year
-COPYRIGHT_NAME = "Kemp Po"
+THEME = "theme"
+RELATIVE_URLS = True
 
-DEFAULT_LANG = "en"
+ARTICLE_URL = "{slug}.html"
+ARTICLE_SAVE_AS = "{slug}.html"
+PAGE_URL = "{slug}.html"
+PAGE_SAVE_AS = "{slug}.html"
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+DIRECT_TEMPLATES = ["index", "writing", "sitemap", "robots"]
+SITEMAP_SAVE_AS = "sitemap.xml"
+ROBOTS_SAVE_AS = "robots.txt"
+ARCHIVES_SAVE_AS = ""
+YEAR_ARCHIVE_SAVE_AS = ""
+MONTH_ARCHIVE_SAVE_AS = ""
+DAY_ARCHIVE_SAVE_AS = ""
+AUTHORS_SAVE_AS = ""
+CATEGORIES_SAVE_AS = ""
+TAGS_SAVE_AS = ""
+AUTHOR_SAVE_AS = ""
+CATEGORY_SAVE_AS = ""
+TAG_SAVE_AS = ""
+
+DEFAULT_PAGINATION = False
+USE_FOLDER_AS_CATEGORY = False
+
+FEED_DOMAIN = "https://www.kemppo.com"
+FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-
-# Social widget
-SOCIAL = (("github", "https://github.com/kempspo"),
-          ("linkedin", "https://www.linkedin.com/in/kemp-po/"))
-
-PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["i18n_subsites"]
-
-CC_LICENSE = {
-    "name": "Creative Commons Attribution-ShareAlike",
-    "version": "4.0",
-    "slug": "by-sa",
+MARKDOWN = {
+    "extension_configs": {
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+    },
+    "output_format": "html5",
 }
 
-DEFAULT_PAGINATION = 10
+STATIC_PATHS = ["images"]
 
-USE_FOLDER_AS_CATEGORY = False
-
-MAIN_MENU = True
-MENUITEMS = (
-    ("Archives", "/archives.html"),
-    ("Category", "/categories.html"),
-)
-
-USE_LESS = True
-
-STATIC_PATHS = ["images", "extra/ads.txt", "extra/CNAME"]
-
-EXTRA_PATH_METADATA = {
-    "extra/ads.txt": {"path": "ads.txt"},
-    "extra/CNAME": {"path": "CNAME"},
-}
+COPYRIGHT_YEAR = datetime.now().year
+COPYRIGHT_NAME = "Kemp Po"
+CC_LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"

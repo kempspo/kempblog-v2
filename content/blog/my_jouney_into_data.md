@@ -6,7 +6,7 @@ Slug: my-journey-data
 Authors: Kemp Po
 Summary: The path I took into the world of data and some lessons I learned along the way.
 
-<img src="../images/journey/background.png" style="max-width:25%; float:left; padding-right:10px"/>
+<img src="{static}/images/journey/background.png" style="max-width:25%; float:left; padding-right:10px"/>
 
 I studied Computer Science in Ateneo and got a specialization in data science and analytics. There I learned how to code and how to manage software projects. I got a data analyst internship with RideWave, a startup that provides shuttles to and from work. I did my thesis on the behaviour patterns of twitter users and graduated. I joined the First Circle Data Team and that’s my journey. Well, I lied; it really wasn’t as straight-forward as that. The journey was far from linear.
 
@@ -17,7 +17,7 @@ So let’s go back to what I would say is the beginning of my journey into data,
 In retrospect this set off a chain of events because it opened up realms of possibilities for me; being someone who didn’t particularly enjoy software engineering or web dev which are the usual paths CS people would probably take. I began taking classes that tackled databases, computer simulations, social computing, and agent-based modelling.
 Meanwhile, I also began joining hackathons that centred around the use of data and experimenting on Kaggle datasets trying to figure out if data science was for me and try to learn as much as I could about it. Kaggle and the hackathons were what taught me about machine learning algorithms, or at least exposed me to what they did, and how to implement them.
 
-![This was me in class. To honest, I was definitely NOT one of the best students.](../images/journey/class.png "This was me in class. To honest, I was definitely NOT one of the best students."){: .img-right}
+![This was me in class. To honest, I was definitely NOT one of the best students.]({static}/images/journey/class.png "This was me in class. To honest, I was definitely NOT one of the best students."){: .img-right}
 
 **Key Takeaway:** School and online courses are great for learning foundations and basics. Learning is structured and I was exposed to a bunch of different things, albeit at the surface level. School exposed me to the basics of networking, containerization, general programming practices, and software development practices.
 Fast forward to the beginning of my fourth year, I took an internship with RideWave, an early-stage startup that aims to provide people with a way to get to and from work every day.
@@ -37,7 +37,7 @@ At some point during my job search, I stumbled across a post on a Facebook group
 
 To be honest, by the first call with the manager, I was quite sold at the team. He managed expectations quite well and was frank about what the role would entail. One thing I still remember him flagging during the interviews is that the initial work would probably be more on the engineering side, which I’m completely fine with.
 
-![](../images/journey/fc.jpeg){: .img-left}
+![]({static}/images/journey/fc.jpeg){: .img-left}
 
 I began working in First Circle in July last year and have worked on different projects that have exposed me to different sides of the business as well as different people with different backgrounds.
 

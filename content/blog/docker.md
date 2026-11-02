@@ -35,7 +35,7 @@ normal applications aren't able to maximize these resources. This, however,
 introduced a new issue, portability.
 
 ### Containers vs Virtual Machines
-![](../images/docker/vm_vs_docker.png)
+![]({static}/images/docker/vm_vs_docker.png)
 
 Some key differences between containers and virtual machines are:
 
@@ -67,7 +67,7 @@ There are several parts to a Dockerfile.
 
     4. The final part of the Dockerfile is going to be your container start command. This could come in the form of `CMD` or `ENTRYPOINT`. The key difference betweeen the two is that `CMD` is a default command that can be overriden easily. `ENTRYPOINT`, on the other hand, is the choice when you want to start the container with a specific executable. The only way to override the `ENTRYPOINT` command is to pass an `--entrypoint` flag.
    
-    ![](../images/docker/partsofdockerfile.png)
+    ![]({static}/images/docker/partsofdockerfile.png)
 
     You can make a lot of customizations to your Dockerfile and how it's run. Check out the documentation at [docs.docker.com](https://docs.docker.com/engine/reference/builder/)
 

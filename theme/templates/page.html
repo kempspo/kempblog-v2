@@ -1,29 +1,14 @@
 {% extends "base.html" %}
 
-{% block meta %}
-{{ super() }}
-
-{% if page.translations -%}
-<link rel="alternate" href="{{ SITEURL }}/{{ page.url }}" hreflang="{{ page.lang }}" />
-{% for p in page.translations %}
-<link rel="alternate" href="{{ SITEURL }}/{{ p.url }}" hreflang="{{ p.lang }}" />
-{% endfor %}
-{% endif %}
-{% endblock %}
-
-{% block title %} &ndash; {{ page.title }}{% endblock %}
+{% block fulltitle %}{{ page.title }} · {{ SITENAME }}{% endblock %}
+{% block description %}{{ page.summary|striptags|trim }}{% endblock %}
+{% block canonical_path %}{{ page.url }}{% endblock %}
+{% block og_path %}{{ page.url }}{% endblock %}
+{% block nav_about %}{% if page.slug == "about" %}aria-current="page"{% endif %}{% endblock %}
+{% block nav_podcast %}{% if page.slug == "podcast" %}aria-current="page"{% endif %}{% endblock %}
 
 {% block content %}
-<article class="single">
-  <header>
-    {% import 'partial/translations.html' as translations with context %}
-    {{ translations.translations_for(page) }}
-    <h1 id="{{ page.slug }}">{{ page.title }}</h1>
-  </header>
-  <div>
-    {% block before_content %}{% endblock %}
-    {% block page_content %}{{ page.content }}{% endblock %}
-    {% block after_content %}{% endblock %}
-  </div>
-</article>
+<div class="content">
+  {{ page.content }}
+</div>
 {% endblock %}

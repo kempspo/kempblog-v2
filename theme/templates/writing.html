@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block fulltitle %}Writing · {{ SITENAME }}{% endblock %}
+{% block description %}Writing.{% endblock %}
+{% block canonical_path %}writing.html{% endblock %}
+{% block og_path %}writing.html{% endblock %}
+{% block nav_writing %}aria-current="page"{% endblock %}
+
+{% block content %}
+<h1>Writing</h1>
+{% for article in articles %}
+<article class="entry">
+  <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+  <p class="meta">{{ article.locale_date }}</p>
+  <div class="summary">{{ article.summary }}</div>
+</article>
+{% endfor %}
+{% endblock %}
